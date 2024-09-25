@@ -1,0 +1,84 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Flexbox Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+/* Main Content Container */
+.main-content {
+    flex: 1; 
+    padding-bottom: 60px; 
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #EF0107, #0000FF); /* Red to Blue */
+    color: #FFFFFF; /* White */
+    z-index: 1000; /* Ensures header stays on top of other content */
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex; /* Horizontal alignment */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+header ul li {
+    margin: 0 10px; /* Space between the links */
+}
+
+header ul li a {
+    display: block;
+    padding: 20px 20px; /* Size of the clickable area */
+    color: #FFFFFF; /* White */
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+}
+
+header ul li a:hover {
+    background: linear-gradient(to right, #021691, #8A2BE2); /* Change background on hover */
+    border-radius: 0; /* Set border-radius to 0 for a box shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    transform: scale(1.10); /* Optional: Slightly increase the size */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative; /* Allows footer to be positioned at the bottom of the content */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a clearer separation */
+    border-top: 1px solid #ddd; /* Optional: Add a top border for better separation */
+}
+
+/* Footer Links */
+footer a ,p {
+    color: #444444; /* Black */
+    text-decoration: none;
+    padding: 5px 10px; /* Reduce padding around the text */
+}
+
+footer a:hover ,footer p:hover{
+   color:#021691; /* Optional: gradient background on hover */
+    text-decoration: underline;
+}
